@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id"><head><meta charset="utf-8">
+<title>Contoh Cetak QR Roll — A4 Landscape (4 roll)</title>
+<style>
+  @page { size: A4 landscape; margin: 8mm; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: Arial, Helvetica, sans-serif; color: #111; }
+  .page { display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; width: 281mm; height: 194mm; }
+  .cell { padding: 4mm 6mm; border: 0.5mm dashed #999; overflow: hidden; }
+  .rid { font-family: "Courier New", monospace; font-weight: bold; word-break: break-all; overflow: hidden;
+          display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
+  .rid.top { font-size: 14pt; line-height: 1.25; margin-bottom: 2.5mm; }
+  .rid.bottom { font-size: 9pt; line-height: 1.3; margin-top: 2mm; }
+  .body { display: flex; align-items: center; gap: 6mm; }
+  .qr { width: 60mm; height: 60mm; flex: none; }
+  .info { min-width: 0; }
+  .pair { margin-bottom: 1.8mm; }
+  .lbl { display: block; font-size: 9pt; color: #555; }
+  .val { display: block; font-size: 11.5pt; font-weight: bold; }
+  .note { font-size: 9pt; color: #666; margin: 4mm 2mm; }
+  @media print { .note { display: none; } }
+</style></head><body>
+<p class="note">CONTOH (bukan dokumen resmi) — 1 halaman A4 landscape = 4 roll. QR berisi Roll ID polos, bisa dipindai.</p>
+<div class="page">
+    <div class="cell">
+      <div class="rid top">260925-Rayon TTMD Hitam (Idola)-01(25.7)</div>
+      <div class="body">
+        <img class="qr" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQgAAAEIAQAAAACLjVdSAAABFElEQVR42u2ZwQ7DMAhDrf3/P7MpBENz6X0vqdQqNCcLbHAUb0v3BPuEcq1NbUf0o7f1TydUoC08ftsMqqNAPBKBxiOR2FEuHrtoMmUuHskfVUFkPKKwiAIDzR9qDh0PVl+G+KpYZISJ9bJoo5LELygeoSbQSpjEhsmn1ZTG6DxGe0vk062yrpNuVKn8UQSyU2T8IOrL46uYdMrMjwd/ZBEV0TL1xQ2YxjgTovanpSrm1jYBgPmhaX/YDKHWi0lDban1TEPUF3+cFK24SP/DXlCUsnji5c63YzNkh+t/TDDsDpH9MbXaquc6uH8aZ85g8ZAFJoxN4O8bLDhcPj3u5zo1oPnhMa4LRj30g/31e79/TxzrC/TQMroLZ57gAAAAAElFTkSuQmCC" alt="QR">
+        <div class="info"><div class="pair"><span class="lbl">Tanggal Datang:</span><span class="val">25 Sep 2026</span></div><div class="pair"><span class="lbl">Jenis Kain:</span><span class="val">Rayon TTMD</span></div><div class="pair"><span class="lbl">Motif:</span><span class="val">Hitam</span></div><div class="pair"><span class="lbl">Ukuran:</span><span class="val">25.7 Kg</span></div><div class="pair"><span class="lbl">No. Urut:</span><span class="val">01</span></div></div>
+      </div>
+      <div class="rid bottom">260925-Rayon TTMD Hitam (Idola)-01(25.7)</div>
+    </div>
+    <div class="cell">
+      <div class="rid top">260925-Rayon TTMD Hitam (Idola)-02(24.1)</div>
+      <div class="body">
+        <img class="qr" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQgAAAEIAQAAAACLjVdSAAABE0lEQVR42u2ZsRKDMAxDdf3/f1aPJpYNDOx9pAwllwWdbMmK/LT0nmCf0Fo+nmxk1x89rX86oQLtAOP3euDh3iXioU0N9dO7WDwUkix+0PFYtBjQYPFI690UsdD9o/Tl/MPqS6S3S2UuZP/wZkrBkhZC5Mf6+u4bp/pB8mNri2e9VDEB+2ngcEtO/hD1tpuorMkQaD8NAI45DSBYfdnuNOaU6k89TUi9bMlh+tNKPDy8aY0vRH96CYIiMxbYn1apVPWQ+aHRMmLNqP50REHu4BSsL4mW5dM8Q82Digs15dbkT51fLka9TSo9X7+P/Oh8/XIFA84/gkeSoX7j5uvzztLC+rGhL86c30TB+o/3fv89cVtfjaUswAJN+YMAAAAASUVORK5CYII=" alt="QR">
+        <div class="info"><div class="pair"><span class="lbl">Tanggal Datang:</span><span class="val">25 Sep 2026</span></div><div class="pair"><span class="lbl">Jenis Kain:</span><span class="val">Rayon TTMD</span></div><div class="pair"><span class="lbl">Motif:</span><span class="val">Hitam</span></div><div class="pair"><span class="lbl">Ukuran:</span><span class="val">24.1 Kg</span></div><div class="pair"><span class="lbl">No. Urut:</span><span class="val">02</span></div></div>
+      </div>
+      <div class="rid bottom">260925-Rayon TTMD Hitam (Idola)-02(24.1)</div>
+    </div>
+    <div class="cell">
+      <div class="rid top">240504-PE 30S Hitam (Karunia Textile)-01(24.95)</div>
+      <div class="body">
+        <img class="qr" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASgAAAEoAQAAAADDfFG0AAABdElEQVR42u2ay47DMAwDif3/f9YCiSTSjlwExd6WKdDm4dNAosdOEW8OeJRHfTsK93FfIr+uO/3kB2+O/zAKBfY6QXKK/r2fmNfCq9mgsNVFPjGviZfcvK7M6w0vZpd5fcwvaEmBU4Z5bby6Bx8fz48Dr90wEqIKiXmt/Xi3ItQighOleT36keGVsZWnaa/mtfcjgyxkbiwbMy/lJfEeFIvKMNfXs77ATlzQVYua1+qrmVlg8Kvvm9cjvxj9etpWYV5TfqXQo90inF+zT/T8KEvJ3q4wr8knQgDVtg7sq2e/l52coLSG8/6D35ek0i7g+pp8ArvgB2QZaV5DflU5gRvSXg8d+5HL62pJ1px5PfwLQVld9NX5NedXLxWrqgjNvIb8CnlvK6Dsq3N+gaXV2zqcN81r81VVe/Ex+9chv3IfgpbaoQ/714lX2SqC+PLMvKb66vSS1x5+v33Mr/G9h/PrOD/KHKl57348+Jf/OehRfz7qF4WPIxDKOYcxAAAAAElFTkSuQmCC" alt="QR">
+        <div class="info"><div class="pair"><span class="lbl">Tanggal Datang:</span><span class="val">4 Mei 2024</span></div><div class="pair"><span class="lbl">Jenis Kain:</span><span class="val">PE 30S</span></div><div class="pair"><span class="lbl">Motif:</span><span class="val">Hitam</span></div><div class="pair"><span class="lbl">Ukuran:</span><span class="val">24.95 Kg</span></div><div class="pair"><span class="lbl">No. Urut:</span><span class="val">01</span></div></div>
+      </div>
+      <div class="rid bottom">240504-PE 30S Hitam (Karunia Textile)-01(24.95)</div>
+    </div>
+    <div class="cell">
+      <div class="rid top">250912-Waffle Milo (Barokah)-06(30)</div>
+      <div class="body">
+        <img class="qr" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQgAAAEIAQAAAACLjVdSAAABGElEQVR42u2ZyxLCQAgEp/z/f8ZKlgHWHHK3dz1ocD3YxWMAxdvRucG+oXWu9+v5+s16uq3x0dv5pxsytBuEmqCtRB63dyyvSJcZViyP5JA+cniMOIH7hzk4YDYrj4fry/7C1pdZeteHzYzMHyFLjugour8g+seuxKLRUOtLR0sGyoIhZrxYjiUAxRY1TB5JoehU3SXysAqTqUwhwsunnSxcaGdWAfLYxIfFiDUIU69Xb2t1Wk0NUn+MAUjboDyquEYMRWJxxtWnGSWNA6pPY4CJR89L7m9dbVt9oOcfGqPTnI8Feb6un6VDgOtLq7EegojNY8pUKbD5dO4ben5aPQx7vh5DmFHjpf58raPUqzqu/jj7/XPjcb48lji0hyqpogAAAABJRU5ErkJggg==" alt="QR">
+        <div class="info"><div class="pair"><span class="lbl">Tanggal Datang:</span><span class="val">12 Sep 2025</span></div><div class="pair"><span class="lbl">Jenis Kain:</span><span class="val">Waffle</span></div><div class="pair"><span class="lbl">Motif:</span><span class="val">Milo</span></div><div class="pair"><span class="lbl">Ukuran:</span><span class="val">30 Yard</span></div><div class="pair"><span class="lbl">No. Urut:</span><span class="val">06</span></div></div>
+      </div>
+      <div class="rid bottom">250912-Waffle Milo (Barokah)-06(30)</div>
+    </div></div>
+</body></html>
