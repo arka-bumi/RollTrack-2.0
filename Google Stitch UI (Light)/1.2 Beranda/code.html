@@ -1,0 +1,225 @@
+<!DOCTYPE html><html class="light" lang="en" style="width: 390px; height: 884px; overflow: hidden; position: relative;"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        "background": "#fff8f4",
+        "tertiary-container": "#576569",
+        "secondary-fixed": "#ffdad4",
+        "surface-bright": "#fff8f4",
+        "inverse-on-surface": "#ffeedc",
+        "on-surface-variant": "#40484b",
+        "surface-container-highest": "#ffddb4",
+        "secondary": "#ac3323",
+        "on-tertiary": "#ffffff",
+        "on-secondary": "#ffffff",
+        "primary-container": "#266b7d",
+        "on-tertiary-fixed": "#101e21",
+        "surface-dim": "#fcd3a0",
+        "surface-container-lowest": "#ffffff",
+        "on-background": "#291800",
+        "on-secondary-fixed-variant": "#8a1a0e",
+        "on-primary-fixed": "#001f27",
+        "surface": "#fff8f4",
+        "error": "#ba1a1a",
+        "surface-container-high": "#ffe4c4",
+        "error-container": "#ffdad6",
+        "surface-variant": "#ffddb4",
+        "primary-fixed": "#b1ecff",
+        "primary": "#005363",
+        "on-secondary-container": "#6c0300",
+        "outline-variant": "#bfc8cc",
+        "outline": "#70787c",
+        "secondary-container": "#fd6e58",
+        "on-tertiary-fixed-variant": "#3b494d",
+        "on-primary": "#ffffff",
+        "tertiary-fixed": "#d6e5ea",
+        "on-primary-container": "#a9e9fe",
+        "on-error": "#ffffff",
+        "primary-fixed-dim": "#90d0e4",
+        "on-error-container": "#93000a",
+        "tertiary-fixed-dim": "#bac9ce",
+        "on-secondary-fixed": "#400100",
+        "tertiary": "#3f4d51",
+        "surface-tint": "#206678",
+        "surface-container-low": "#fff1e4",
+        "on-primary-fixed-variant": "#004e5e",
+        "secondary-fixed-dim": "#ffb4a7",
+        "surface-container": "#ffebd4",
+        "inverse-surface": "#432c07",
+        "on-surface": "#291800",
+        "inverse-primary": "#90d0e4",
+        "on-tertiary-container": "#d3e2e7"
+      },
+      borderRadius: {
+        "DEFAULT": "0.125rem",
+        "lg": "0.25rem",
+        "xl": "0.5rem",
+        "full": "0.75rem"
+      },
+      spacing: {
+        "margin-mobile": "0.75rem",
+        "space-xs": "0.25rem",
+        "space-lg": "1rem",
+        "gutter": "0.75rem",
+        "gutter-mobile": "0.5rem",
+        "margin": "1rem",
+        "space-md": "0.75rem",
+        "space-sm": "0.5rem",
+        "space-xl": "1.5rem"
+      },
+      fontFamily: {
+        "headline-lg": ["Inter"],
+        "headline-xl": ["Inter"],
+        "headline-lg-mobile": ["Inter"],
+        "body-sm": ["JetBrains Mono", "Inter"],
+        "label-sm": ["JetBrains Mono", "Inter"],
+        "data-display-md": ["JetBrains Mono", "Inter"],
+        "headline-sm": ["Inter"],
+        "headline-xl-mobile": ["Inter"],
+        "body-md": ["JetBrains Mono", "Inter"],
+        "data-display-lg": ["JetBrains Mono", "Inter"],
+        "headline-md": ["Inter"],
+        "label-lg": ["Inter"],
+        "label-md": ["Inter"],
+        "body-lg": ["JetBrains Mono", "Inter"]
+      },
+      fontSize: {
+        "headline-lg": ["28px", { lineHeight: "36px", letterSpacing: "-0.01em", fontWeight: "600" }],
+        "headline-xl": ["36px", { lineHeight: "44px", letterSpacing: "-0.02em", fontWeight: "700" }],
+        "headline-lg-mobile": ["22px", { lineHeight: "28px", letterSpacing: "-0.01em", fontWeight: "600" }],
+        "body-sm": ["12px", { lineHeight: "16px", letterSpacing: "0.01em", fontWeight: "400" }],
+        "label-sm": ["10px", { lineHeight: "14px", letterSpacing: "0.08em", fontWeight: "600" }],
+        "data-display-md": ["24px", { lineHeight: "30px", letterSpacing: "-0.02em", fontWeight: "600" }],
+        "headline-sm": ["16px", { lineHeight: "22px", letterSpacing: "0.01em", fontWeight: "600" }],
+        "headline-xl-mobile": ["28px", { lineHeight: "34px", letterSpacing: "-0.02em", fontWeight: "700" }],
+        "body-md": ["14px", { lineHeight: "20px", letterSpacing: "0em", fontWeight: "400" }],
+        "data-display-lg": ["32px", { lineHeight: "38px", letterSpacing: "-0.03em", fontWeight: "700" }],
+        "headline-md": ["20px", { lineHeight: "26px", letterSpacing: "0em", fontWeight: "600" }],
+        "label-lg": ["14px", { lineHeight: "18px", letterSpacing: "0.04em", fontWeight: "600" }],
+        "label-md": ["12px", { lineHeight: "16px", letterSpacing: "0.06em", fontWeight: "600" }],
+        "body-lg": ["16px", { lineHeight: "24px", letterSpacing: "-0.01em", fontWeight: "500" }]
+      }
+    }
+  }
+};</script><style>@layer base{html,body{width:100vw;min-height:100vh;margin:0;padding:0;background-color:#f8fafc;color:#0f172a;}body{overscroll-behavior-y:none;-webkit-tap-highlight-color:transparent;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}}::-webkit-scrollbar{display:none;}</style></head><body class="bg-[#f8fafc] font-body-md text-body-md text-[#0f172a] flex flex-col antialiased selection:bg-[#266b7d]/20 selection:text-[#266b7d]" style="width: 390px; height: 884px; max-height: 884px; overflow: hidden;"><header class="fixed top-0 inset-x-0 z-50 bg-white/90 backdrop-blur-xl border-b border-slate-200/80 shadow-[0_1px_6px_rgba(0,0,0,0.04)] pt-safe"><div class="h-20 px-margin-mobile flex flex-col justify-center gap-1"><div class="flex items-center justify-between text-slate-600 font-label-sm text-label-sm"><span class="font-semibold text-[#0f172a] tracking-tight text-[14px]">09:41</span><div class="flex items-center gap-1 text-[#0f172a]"><span class="material-symbols-outlined text-[16px]">signal_cellular_alt</span><span class="material-symbols-outlined text-[16px]">wifi</span><span class="material-symbols-outlined text-[18px]">battery_full</span></div></div><div class="flex items-center justify-between mt-0.5"><div class="flex items-center gap-1.5"><span class="text-[24px] font-headline-lg font-bold text-[#0f172a] tracking-wide leading-tight">RollTrack</span></div><div class="flex items-center gap-1"><span class="text-[20px] font-headline-lg font-bold text-[#266b7d] tracking-tight leading-tight">Budi Santoso</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pb-24 px-margin-mobile bg-[#f8fafc] pt-20" style="height: calc(884px - 5rem); overflow-y: auto; padding-top: 6rem;"><div class="flex flex-col w-full gap-space-md gap-space-lg">
+<!-- Operator Profile & Live Terminal Status -->
+<!-- Conditional Operational State Alert Banner -->
+<!-- Core Ergonomic Scanning Operations (Thumb-Driven Zone) -->
+<!-- Shift Summary & Productivity Metrics (Bento Style Mini KPI Grid) -->
+<section class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between px-1"><span class="font-label-md text-label-md text-slate-700 font-bold">Ringkasan Shift Hari Ini</span><div class="flex items-center gap-1 text-[#266b7d] font-label-sm text-[12px] font-medium"><span class="material-symbols-outlined text-[14px] text-[#266b7d]">sync</span><span class="">2m lalu</span></div></div>
+<div class="grid grid-cols-3 gap-space-xs"><!-- KPI 1 -->
+<div class="bg-white border border-slate-200 rounded-xl px-3 py-2.5 flex flex-col justify-between gap-2 shadow-sm">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-lg bg-[#266b7d]/10 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px] text-[#266b7d]">content_cut</span>
+</div>
+<span class="font-data-display-md text-data-display-md text-[#0f172a] font-bold leading-tight">14</span>
+</div>
+<span class="font-label-sm text-label-sm text-slate-500 leading-tight truncate">Dipotong</span>
+</div>
+<!-- KPI 2 -->
+<div class="bg-white border border-slate-200 rounded-xl px-3 py-2.5 flex flex-col justify-between gap-2 shadow-sm">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-lg bg-orange-50 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px] text-[#fd6e58]">sync_alt</span>
+</div>
+<span class="font-data-display-md text-data-display-md text-[#0f172a] font-bold leading-tight">3</span>
+</div>
+<span class="font-label-sm text-label-sm text-slate-500 leading-tight truncate">Dipindah</span>
+</div>
+<!-- KPI 3 -->
+<div class="bg-white border border-slate-200 rounded-xl px-3 py-2.5 flex flex-col justify-between gap-2 shadow-sm">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-lg bg-emerald-50 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px] text-[#266b7d]">done_all</span>
+</div>
+<span class="font-data-display-md text-data-display-md text-[#0f172a] font-bold leading-tight">0</span>
+</div>
+<span class="font-label-sm text-label-sm text-slate-500 leading-tight truncate">Entri Tertunda</span>
+</div></div>
+</section>
+<!-- Recent Visual Fabric Scanning Feed -->
+<section class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between px-1">
+<span class="font-label-md text-label-md text-slate-700 font-bold">Aktivitas Terakhir</span>
+<button class="font-label-sm text-label-sm text-[#266b7d] font-semibold hover:underline">Lihat Semua</button>
+</div>
+<!-- Feed Items -->
+<div class="flex flex-col gap-2">
+<!-- Item 1 -->
+<div class="bg-white border border-slate-200 rounded-xl p-space-sm shadow-sm flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0 w-full">
+<div class="w-12 h-12 rounded-lg shrink-0 bg-[#266b7d]/10 flex items-center justify-center"><span class="material-symbols-outlined text-[24px] text-[#266b7d]">content_cut</span></div>
+<div class="flex flex-col min-w-0 flex-1">
+<div class="flex items-center gap-1.5">
+<span class="font-body-md text-body-md text-[#266b7d] font-bold">260226 - Rayon Kaos Stripe Prussian (Sandang Mulya) - 06 (24.35)</span>
+</div>
+<div class="flex items-center justify-between mt-0.5 text-slate-500 font-label-sm text-label-sm">
+<div class="flex items-center gap-2">
+<span class="text-rose-600 font-semibold flex items-center gap-0.5">
+                Potong 35.5m
+              </span>
+<span class="">•</span>
+<span class="">Sisa 48.2m</span>
+</div>
+<span class="font-label-sm text-label-sm text-[#0f172a] font-semibold shrink-0 text-right">10:42</span>
+</div>
+</div>
+</div></div>
+<!-- Item 2 -->
+<div class="bg-white border border-slate-200 rounded-xl p-space-sm shadow-sm flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0 w-full"><div class="w-12 h-12 rounded-lg shrink-0 bg-orange-50 flex items-center justify-center"><span class="material-symbols-outlined text-[24px] text-[#fd6e58]">sync_alt</span></div><div class="flex flex-col min-w-0 flex-1"><div class="flex items-center gap-1.5"><span class="font-body-md text-body-md text-[#266b7d] font-bold">260415 - Kaos Print Autum Bear (Delima Textile) - 03 (30.4)</span></div><div class="flex items-center justify-between mt-0.5 text-slate-500 font-label-sm text-label-sm"><div class="flex items-center gap-2"><span class="text-[#fd6e58] font-semibold flex items-center gap-0.5">Pindah Rak</span><span class="">•</span><span class="">Nirwana → B4</span></div><span class="font-label-sm text-label-sm text-[#0f172a] font-semibold shrink-0 text-right">09:58</span></div></div></div></div>
+<!-- Item 3 -->
+<div class="bg-white border border-slate-200 rounded-xl p-space-sm shadow-sm flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0 w-full"><div class="w-12 h-12 rounded-lg shrink-0 bg-[#266b7d]/10 flex items-center justify-center"><span class="material-symbols-outlined text-[24px] text-[#266b7d]">content_cut</span></div><div class="flex flex-col min-w-0 flex-1"><div class="flex items-center gap-1.5"><span class="font-body-md text-body-md text-[#266b7d] font-bold">260504 - Kain Quilt Olive (Dunia Dakron) - 01 (20)</span></div><div class="flex items-center justify-between mt-0.5 text-slate-500 font-label-sm text-label-sm"><div class="flex items-center gap-2"><span class="text-rose-600 font-semibold flex items-center gap-0.5">Potong 120.0m</span><span class="">•</span><span class="">Sisa 15.0m</span></div><span class="font-label-sm text-label-sm text-[#0f172a] font-semibold shrink-0 text-right">09:15</span></div></div></div></div>
+</div>
+</section>
+<!-- Warehouse Environmental Micro-Notice Modal/Toast Mock -->
+<div class="hidden fixed bottom-20 inset-x-margin-mobile bg-white border border-slate-200 p-space-md rounded-xl shadow-2xl z-40" id="opname-toast">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-[#266b7d] text-[22px] mt-0.5">info</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-[#0f172a] font-semibold">Jadwal Stok Opname</span>
+<span class="font-body-sm text-body-sm text-slate-600 mt-0.5">Sesi audit fisik roll dijadwalkan hari Jumat pukul 16:00 WIB oleh Supervisor Tim 2.</span>
+</div>
+</div>
+<button class="text-slate-400 hover:text-slate-700 p-1" id="close-toast-btn">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    const infoBtn = document.getElementById('toggle-opname-info');
+    const toast = document.getElementById('opname-toast');
+    const closeBtn = document.getElementById('close-toast-btn');
+
+    if (infoBtn && toast && closeBtn) {
+      infoBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        toast.classList.remove('hidden');
+      });
+
+      closeBtn.addEventListener('click', function() {
+        toast.classList.add('hidden');
+      });
+    }
+  })();
+</script></main><nav class="fixed bottom-0 inset-x-0 z-50 pb-safe bg-white/95 backdrop-blur-md border-t border-slate-200 shadow-xl"><div class="relative flex justify-around items-center h-16 px-margin-mobile"><div class="flex items-center justify-around flex-1 h-full"><a aria-current="page" class="flex flex-col items-center justify-center gap-0.5 flex-1 h-full active:scale-95 transition-all text-[#fd6e58]" data-path="dashboard" href="#"><div class="px-3 py-1 rounded-full bg-orange-50 flex items-center justify-center"><svg class="w-5 h-5 fill-current text-[#fd6e58]" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z"></path></svg></div><span class="font-label-sm text-label-sm font-bold tracking-wide text-[#fd6e58]">Beranda</span></a><a class="flex flex-col items-center justify-center gap-0.5 flex-1 h-full text-[#64748b] active:scale-95 transition-all hover:text-[#0f172a]" data-path="pindah-gudang" href="#"><span class="material-symbols-outlined text-[24px]">sync_alt</span><span class="font-label-sm text-label-sm font-medium tracking-wide">Pindah</span></a></div><div class="relative -top-5 flex flex-col items-center justify-center shrink-0 px-2"><button class="w-14 h-14 rounded-2xl bg-[#266b7d] flex items-center justify-center shadow-lg shadow-[#266b7d]/35 active:scale-90 transition-all text-white ring-4 ring-white"><span class="material-symbols-outlined text-[30px] font-bold text-white">content_cut</span></button></div><div class="flex items-center justify-around flex-1 h-full"><a class="flex flex-col items-center justify-center gap-0.5 flex-1 h-full text-[#64748b] active:scale-95 transition-all hover:text-[#0f172a]" data-path="katalog" href="#"><svg class="w-6 h-6 shrink-0 text-[#64748b]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="7" cy="8" rx="3.5" ry="4"></ellipse><path d="M7 4h10c1.93 0 3.5 1.79 3.5 4s-1.57 4-3.5 4H7"></path><ellipse cx="7" cy="16" rx="3.5" ry="4"></ellipse><path d="M7 12h10c1.93 0 3.5 1.79 3.5 4s-1.57 4-3.5 4H7"></path></svg><span class="font-label-sm text-label-sm font-medium tracking-wide">Kain</span></a><a class="flex flex-col items-center justify-center gap-0.5 flex-1 h-full text-[#64748b] active:scale-95 transition-all hover:text-[#0f172a]" data-path="profil" href="#"><span class="material-symbols-outlined text-[24px]">account_circle</span><span class="font-label-sm text-label-sm font-medium tracking-wide">Profil</span></a></div></div></nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body></html>

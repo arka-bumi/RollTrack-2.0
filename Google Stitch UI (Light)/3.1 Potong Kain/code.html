@@ -1,0 +1,212 @@
+<!DOCTYPE html><html lang="id" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+<title>RollTrack - Cutting</title>
+<!-- Tailwind CSS v3 -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              teal: '#266b7d',
+              tealDark: '#1d5462',
+              tealLight: '#f0f9fa',
+              tealBorder: '#cce6eb',
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<style data-purpose="custom-layout">
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .material-symbols-outlined.fill-current {
+      font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    /* Hide scrollbars on body */
+    body {
+      -webkit-tap-highlight-color: transparent;
+      scrollbar-width: none;
+    }
+    body::-webkit-scrollbar {
+      display: none;
+    }
+  </style>
+</head>
+<body class="bg-[#f8fafc] text-slate-800 font-sans min-h-screen flex justify-center selection:bg-teal-100 selection:text-teal-900">
+<!-- Mobile Container mimicking iOS frame -->
+<div class="w-[390px] h-[884px] max-h-[884px] mx-auto bg-[#f8fafc] text-[#181c1f] flex flex-col relative overflow-y-auto font-sans antialiased select-none pb-24">
+<!-- BEGIN: StatusBar -->
+<div class="bg-white border-b border-slate-200/80"><div class="pt-3 px-7 flex justify-between items-center text-xs font-semibold text-slate-900 select-none"><span class="">09:41</span><div class="flex items-center space-x-1.5"><span class="material-symbols-outlined text-[15px] font-bold">signal_cellular_alt</span><span class="material-symbols-outlined text-[15px] font-bold">wifi</span><span class="material-symbols-outlined text-[17px] font-bold">battery_full</span></div></div><header class="px-4 pt-2 pb-3 flex justify-between items-center"><h1 class="text-[26px] font-extrabold tracking-tight text-slate-900">RollTrack</h1><span class="text-[26px] font-extrabold tracking-tight text-brand-teal">Cutting</span></header></div>
+<!-- END: StatusBar -->
+<!-- BEGIN: Header -->
+
+<!-- END: Header -->
+<!-- BEGIN: Navigation Button (Back) -->
+<div class="px-4 pt-1 pb-3">
+
+</div>
+<!-- END: Navigation Button (Back) -->
+<!-- BEGIN: MainContent -->
+<main class="px-4 space-y-4">
+<!-- BEGIN: KonfigurasiBatchProduksiCard -->
+<section class="bg-white rounded-2xl border border-slate-200/90 shadow-sm p-4 space-y-4">
+<!-- Title with icon -->
+<div class="flex items-center gap-2 text-brand-teal font-bold text-[15px]">
+<span class="material-symbols-outlined text-[19px]">tune</span>
+<h2 class="">Konfigurasi Batch Produksi</h2>
+</div>
+<!-- Segmented Button: Produksi Malikids vs Non-Produksi -->
+<div class="flex items-center gap-2"><div class="flex-1 flex items-center p-1 bg-[#f1f5f9] rounded-xl gap-1"><button class="flex-1 flex items-center justify-center py-2 px-2 rounded-lg bg-brand-teal text-white text-[11px] font-semibold shadow-sm transition truncate" type="button"><span class="truncate">Malilkids</span></button><button class="flex-1 flex items-center justify-center py-2 px-2 rounded-lg text-slate-600 hover:text-slate-800 hover:bg-slate-50 text-[11px] font-medium transition truncate" type="button"><span class="truncate">Anakkecilku</span></button></div><div class="flex items-center p-1 bg-[#f1f5f9] rounded-xl gap-1 flex-shrink-0"><button aria-label="Produksi" title="Produksi" class="w-9 h-8 flex items-center justify-center rounded-lg bg-brand-teal text-white shadow-sm transition" type="button"><span class="material-symbols-outlined text-[18px]">precision_manufacturing</span></button><button aria-label="Non-Produksi" title="Non-Produksi" class="w-9 h-8 flex items-center justify-center rounded-lg text-slate-500 hover:text-slate-800 hover:bg-slate-50 transition" type="button"><span class="material-symbols-outlined text-[18px]">science</span></button></div></div>
+<!-- Row: Tanggal Potong & No. Batch -->
+<div class="grid grid-cols-5 gap-3">
+<!-- Tanggal Potong -->
+<div class="col-span-3 space-y-1.5">
+<label class="text-[11px] font-medium text-slate-600 block">Tanggal Potong</label>
+<div class="flex items-center justify-between border border-slate-300 rounded-xl px-3 py-2 bg-slate-50/50 focus-within:border-brand-teal focus-within:ring-1 focus-within:ring-brand-teal h-[38px]"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-slate-500 text-lg">calendar_today</span><span class="text-xs font-semibold text-slate-800">17/09/26</span></div><span class="material-symbols-outlined text-slate-400 text-sm">expand_more</span></div>
+</div>
+<!-- No. Batch -->
+<div class="col-span-2 space-y-1.5">
+<label class="text-[11px] font-medium text-slate-600 block">No. Batch</label>
+<div class="flex items-center border border-slate-300 rounded-xl px-3 py-2 bg-slate-50/50 focus-within:border-brand-teal focus-within:ring-1 focus-within:ring-brand-teal h-[38px]"><span class="text-xs font-bold text-slate-500 mr-2">#</span><span class="text-xs font-semibold text-slate-800">01</span></div>
+</div>
+</div>
+<!-- SKU Produk / Nama Produk Search Box -->
+<div class="space-y-1.5">
+<label class="text-[11px] font-medium text-slate-600 block">SKU Produk / Nama Produk</label>
+<div class="flex items-center justify-between border border-slate-300 rounded-xl px-3 py-2 bg-slate-50/50 focus-within:border-brand-teal focus-within:ring-1 focus-within:ring-brand-teal">
+<div class="flex items-center gap-2 min-w-0 pr-1">
+<span class="material-symbols-outlined text-slate-400 text-lg flex-shrink-0">search</span>
+<span class="text-xs font-medium text-slate-800 truncate">GDSSBLKM - Geos Diamond 1 sisi - Black</span>
+</div>
+<span class="material-symbols-outlined text-slate-400 text-sm flex-shrink-0">expand_more</span>
+</div>
+</div>
+<!-- Varian & Ukuran Info Block -->
+<div class="bg-slate-50/70 border border-slate-100 rounded-xl p-3 space-y-2 text-xs">
+<div class="flex justify-between items-center">
+<span class="text-slate-500 font-medium">Nama Produk</span>
+<span class="font-bold text-slate-800">Geos Diamond 1 sisi - Black</span>
+</div>
+<div class="flex justify-between items-center">
+<span class="text-slate-500 font-medium">Varian</span>
+<span class="font-bold text-slate-800">M</span>
+</div>
+</div>
+<!-- Kode Produksi Card -->
+<div class="bg-brand-tealLight border border-teal-100 rounded-xl p-3 flex items-center justify-between">
+<div>
+<div class="text-[10px] uppercase tracking-wider font-semibold text-brand-teal">Kode Produksi</div>
+<div class="text-sm font-bold font-mono tracking-tight text-brand-teal mt-0.5">M170926-GDSSBLKM-01</div>
+</div>
+<div class="w-9 h-9 rounded-lg border border-teal-200/80 bg-white flex items-center justify-center text-brand-teal shadow-xs">
+<span class="material-symbols-outlined text-lg">lock</span>
+</div>
+</div>
+</section>
+<!-- END: KonfigurasiBatchProduksiCard -->
+<!-- BEGIN: JumlahKainCard -->
+<section class="bg-white rounded-2xl border border-slate-200/90 shadow-sm p-4 space-y-3">
+<!-- Title with icon -->
+<div class="flex items-center gap-2 text-brand-teal font-bold text-[15px]">
+<span class="material-symbols-outlined text-[19px]">layers</span>
+<h2 class="">Jumlah Kain dalam Kode Produksi</h2>
+</div>
+<!-- Single Fabric Roll Item: Replaced checkmark with Trash button -->
+<div class="bg-slate-50/60 border border-slate-200/80 rounded-xl p-3 flex items-center justify-between">
+<div class="flex items-center gap-3">
+<!-- Badge #1 in teal -->
+<div class="w-8 h-8 rounded-lg bg-brand-teal text-white flex items-center justify-center text-xs font-bold shadow-xs">
+              #1
+            </div>
+<div>
+<div class="font-bold text-slate-900 text-xs tracking-tight">240504 - PE 30S Hitam (Karunia Textile) - 01 (24.95)</div>
+<div class="text-xs font-mono font-medium text-brand-teal mt-0.5">35.00 m</div>
+</div>
+</div>
+<!-- Trash icon delete action matching RollTrack delete buttons -->
+<button aria-label="Hapus Roll" class="w-8 h-8 rounded-lg bg-slate-100/80 hover:bg-red-50 text-slate-400 hover:text-red-500 border border-slate-200/60 flex items-center justify-center transition active:scale-95" type="button">
+<span class="material-symbols-outlined text-[19px]">delete</span>
+</button>
+</div>
+<!-- Tambah Roll Kain Dashed Button -->
+<button class="w-full py-3 px-4 border-2 border-dashed border-brand-teal/40 rounded-xl bg-teal-50/20 hover:bg-teal-50/50 flex items-center justify-center gap-2 text-brand-teal text-xs font-bold transition" type="button">
+<span class="material-symbols-outlined text-[18px]">add_box</span>
+<span class="">Tambah Roll Kain</span>
+</button>
+</section>
+<!-- END: JumlahKainCard -->
+<!-- BEGIN: SimpanTransaksiCTA -->
+<div class="pt-2 pb-6"><button class="w-full py-3.5 px-6 rounded-xl bg-brand-teal hover:bg-brand-tealDark active:scale-[0.99] text-white font-bold text-sm shadow-md shadow-brand-teal/20 flex items-center justify-center gap-2 transition" type="button"><span class="material-symbols-outlined text-lg">check_circle</span><span class="">Simpan Transaksi</span></button></div>
+<!-- END: SimpanTransaksiCTA -->
+</main>
+<!-- END: MainContent -->
+<!-- BEGIN: FloatingBottomNavbar -->
+<nav class="fixed bottom-0 left-0 right-0 max-w-[390px] mx-auto bg-white/95 backdrop-blur-md border-t border-slate-200/80 px-4 py-2 z-40 shadow-lg">
+<div class="flex items-center justify-between relative">
+<!-- Tab: Beranda -->
+<a class="flex flex-col items-center flex-1 py-1 text-slate-500 hover:text-brand-teal transition" href="#">
+<span class="material-symbols-outlined text-[22px]">space_dashboard</span>
+<span class="text-[10px] font-medium mt-1">Beranda</span>
+</a>
+<!-- Tab: Pindah -->
+<a class="flex flex-col items-center flex-1 py-1 text-slate-500 hover:text-brand-teal transition" href="#">
+<span class="material-symbols-outlined text-[22px]">swap_horiz</span>
+<span class="text-[10px] font-medium mt-1">Pindah</span>
+</a>
+<!-- Tab: Cutting (Active Floating Center) -->
+<div class="flex flex-col items-center flex-1 -mt-6"><button aria-label="Menu Cutting" class="w-13 h-13 p-3 rounded-2xl bg-[#ff6b57] text-white shadow-lg shadow-[#ff6b57]/30 hover:scale-105 transition active:scale-95 flex items-center justify-center" type="button"><span class="material-symbols-outlined text-[26px]">content_cut</span></button></div>
+<!-- Tab: Kain -->
+<a class="flex flex-col items-center flex-1 py-1 text-slate-500 hover:text-brand-teal transition" href="#">
+<svg class="w-6 h-6 stroke-current text-[#64748b]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="7" cy="8" rx="3.5" ry="4" fill="none"></ellipse><path d="M7 4h10c1.93 0 3.5 1.79 3.5 4s-1.57 4-3.5 4H7" fill="none"></path><ellipse cx="7" cy="16" rx="3.5" ry="4" fill="none"></ellipse><path d="M7 12h10c1.93 0 3.5 1.79 3.5 4s-1.57 4-3.5 4H7" fill="none"></path></svg>
+<span class="text-[10px] font-medium mt-1">Kain</span>
+</a>
+<!-- Tab: Profil -->
+<a class="flex flex-col items-center flex-1 py-1 text-slate-500 hover:text-brand-teal transition" href="#">
+<span class="material-symbols-outlined text-[22px]">account_circle</span>
+<span class="text-[10px] font-medium mt-1">Profil</span>
+</a>
+</div>
+</nav>
+<!-- END: FloatingBottomNavbar -->
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body></html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html><html lang="id" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport">
+<meta content="mobile_tab" name="shell-type">
+<title>RollTrack - Profil Operator</title>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style>
+    body {
+      overscroll-behavior: none;
+      font-family: 'Inter', sans-serif;
+      background-color: #e2e8f0;
+    }
+    ::-webkit-scrollbar {
+      display: none;
+    }
+  </style>
+</head>
+<body class="min-h-screen flex justify-center bg-slate-200">
+<div class="w-full max-w-[390px] min-h-screen flex flex-col justify-between relative shadow-2xl border-x border-slate-200 bg-[#f8fafc]" style="width: 390px; height: 884px; min-height: 884px; max-height: 884px; overflow: hidden;">
+<!-- Header & iOS Status Bar -->
+<header class="sticky top-0 z-40 w-full backdrop-blur-md px-5 pt-3 pb-3 border-b border-slate-200/80 bg-white/95 shadow-sm">
+<div class="flex items-center justify-between text-slate-500 text-xs font-semibold mb-2">
+<span class="font-bold tracking-tight text-slate-800">09:41</span>
+<div class="flex items-center gap-1.5 text-slate-800">
+<span class="material-symbols-outlined text-[16px]">signal_cellular_4_bar</span>
+<span class="material-symbols-outlined text-[16px]">wifi</span>
+<span class="material-symbols-outlined text-[16px]">battery_full</span>
+</div>
+</div>
+<div class="flex items-center justify-between w-full">
+<span class="font-extrabold text-xl text-[#266b7d] tracking-tight shrink-0">RollTrack</span>
+</div>
+</header>
+<!-- Main Content -->
+<main class="flex-1 flex flex-col px-4 pt-3.5 pb-28 gap-3.5">
+<!-- Sub-header with Kembali Button -->
+<div class="flex items-center justify-between py-1">
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white border border-slate-200 text-[#266b7d] text-xs font-semibold shadow-sm hover:bg-slate-50 active:scale-95 transition-all whitespace-nowrap">
+<span class="material-symbols-outlined text-[16px]">arrow_back</span>
+<span class="">Kembali</span>
+</button>
+<h1 class="text-sm font-bold text-slate-800 tracking-tight">Akses &amp; Sinkronisasi</h1>
+</div>
+<!-- System Sync Module -->
+<div class="flex flex-col gap-3 bg-white p-4 rounded-2xl border border-slate-200/90 shadow-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2.5">
+<div class="w-8 h-8 rounded-lg bg-[#266b7d]/10 text-[#266b7d] flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">cloud_sync</span>
+</div>
+<h2 class="text-sm font-bold text-slate-800 leading-none">Sinkronisasi Data</h2>
+</div>
+</div>
+<p class="text-xs text-slate-500 leading-relaxed">Sinkron penuh untuk histori pemakaian kain. Sinkron database untuk master data dan katalog.</p>
+<div class="grid grid-cols-2 gap-2.5 pt-0.5">
+<button class="w-full py-2.5 px-3 rounded-xl bg-[#266b7d] text-white shadow-sm hover:bg-[#205a69] active:scale-95 transition-all flex items-center justify-center gap-1.5 font-semibold text-xs whitespace-nowrap">
+<span class="material-symbols-outlined text-[18px]">sync</span>
+<span class="">Sinkron Penuh</span>
+</button>
+<button class="w-full py-2.5 px-3 rounded-xl bg-white border border-[#266b7d]/40 text-[#266b7d] hover:bg-[#266b7d]/5 active:scale-95 transition-all flex items-center justify-center gap-1.5 font-semibold text-xs shadow-sm whitespace-nowrap">
+<span class="material-symbols-outlined text-[18px]">database</span>
+<span class="">Sinkron Database</span>
+</button>
+</div>
+</div>
+<!-- Operator List Section -->
+<div class="flex flex-col gap-2.5 mt-1">
+<div class="flex items-center justify-between px-0.5">
+<h2 class="text-sm font-bold text-slate-800">Daftar Operator Gudang</h2>
+<span class="text-xs bg-slate-100 text-slate-600 px-2.5 py-0.5 rounded-full font-semibold border border-slate-200">3 Pengguna</span>
+</div>
+<!-- Operator 1 -->
+<div class="flex flex-col bg-white rounded-2xl p-3.5 shadow-sm border border-slate-200/80 transition-all">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-[#266b7d]/10 text-[#266b7d] flex items-center justify-center font-bold text-xs shrink-0 border border-[#266b7d]/20">
+                #1
+              </div>
+<div class="flex flex-col">
+<span class="font-bold text-slate-800 text-sm">Budi Santoso</span>
+<span class="text-[11px] text-slate-500 font-medium">Operator Cutting &amp; Moving</span>
+</div>
+</div>
+<div class="flex items-center gap-1.5">
+<button class="px-2.5 py-1.5 rounded-lg border border-slate-200 text-slate-700 text-xs font-medium hover:bg-slate-50 active:scale-95 transition-all flex items-center gap-1 shrink-0 whitespace-nowrap">
+<span class="material-symbols-outlined text-[15px]">edit</span>
+<span class="">Edit</span>
+</button>
+<button class="px-2.5 py-1.5 rounded-lg border border-[#ac3323]/30 text-[#ac3323] text-xs font-medium hover:bg-[#ac3323]/5 active:scale-95 transition-all flex items-center gap-1 shrink-0 whitespace-nowrap">
+<span class="material-symbols-outlined text-[15px]">delete</span>
+<span class="">Hapus</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Operator 2 -->
+<div class="flex flex-col bg-white rounded-2xl p-3.5 shadow-sm border border-slate-200/80 transition-all">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-[#266b7d]/10 text-[#266b7d] flex items-center justify-center font-bold text-xs shrink-0 border border-[#266b7d]/20">
+                #2
+              </div>
+<div class="flex flex-col">
+<span class="font-bold text-slate-800 text-sm">Ahmad Fauzi</span>
+<span class="text-[11px] text-slate-500 font-medium">Operator Gudang &amp; Mutasi</span>
+</div>
+</div>
+<div class="flex items-center gap-1.5">
+<button class="px-2.5 py-1.5 rounded-lg border border-slate-200 text-slate-700 text-xs font-medium hover:bg-slate-50 active:scale-95 transition-all flex items-center gap-1 shrink-0 whitespace-nowrap">
+<span class="material-symbols-outlined text-[15px]">edit</span>
+<span class="">Edit</span>
+</button>
+<button class="px-2.5 py-1.5 rounded-lg border border-[#ac3323]/30 text-[#ac3323] text-xs font-medium hover:bg-[#ac3323]/5 active:scale-95 transition-all flex items-center gap-1 shrink-0 whitespace-nowrap">
+<span class="material-symbols-outlined text-[15px]">delete</span>
+<span class="">Hapus</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Operator 3 -->
+<div class="flex flex-col bg-white rounded-2xl p-3.5 shadow-sm border border-slate-200/80 transition-all">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-[#266b7d]/10 text-[#266b7d] flex items-center justify-center font-bold text-xs shrink-0 border border-[#266b7d]/20">
+                #3
+              </div>
+<div class="flex flex-col">
+<span class="font-bold text-slate-800 text-sm">Rian Hidayat</span>
+<span class="text-[11px] text-slate-500 font-medium">Operator Pemotong Cadangan</span>
+</div>
+</div>
+<div class="flex items-center gap-1.5">
+<button class="px-2.5 py-1.5 rounded-lg border border-slate-200 text-slate-700 text-xs font-medium hover:bg-slate-50 active:scale-95 transition-all flex items-center gap-1 shrink-0 whitespace-nowrap">
+<span class="material-symbols-outlined text-[15px]">edit</span>
+<span class="">Edit</span>
+</button>
+<button class="px-2.5 py-1.5 rounded-lg border border-[#ac3323]/30 text-[#ac3323] text-xs font-medium hover:bg-[#ac3323]/5 active:scale-95 transition-all flex items-center gap-1 shrink-0 whitespace-nowrap">
+<span class="material-symbols-outlined text-[15px]">delete</span>
+<span class="">Hapus</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Add Operator Button -->
+<button class="w-full py-3.5 px-4 rounded-2xl border-2 border-dashed border-[#266b7d]/40 bg-white/70 hover:bg-white text-[#266b7d] active:scale-[0.98] transition-all flex items-center justify-center gap-2 font-bold text-sm shadow-sm mt-1 whitespace-nowrap">
+<span class="material-symbols-outlined text-[20px]">person_add</span>
+<span class="">+ Tambah Pengguna Baru</span>
+</button>
+</div>
+</main>
+<!-- Bottom Floating Navigation Dock -->
+
+<div class="absolute inset-0 z-50 flex items-end justify-center p-0 bg-slate-900/60 backdrop-blur-sm transition-all" id="modal-tambah-operator"><div class="w-full max-w-[390px] bg-white rounded-t-3xl p-5 border border-slate-200 shadow-2xl flex flex-col gap-4 animate-in fade-in zoom-in-95 duration-200"><!-- Modal Header --><div class="flex items-start justify-between"><div class="flex items-center gap-3"><div class="w-10 h-10 rounded-2xl bg-[#266b7d]/10 text-[#266b7d] flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-[24px]">person_add</span></div><div class="flex flex-col"><h3 class="text-base font-bold text-slate-800 leading-tight">Tambah Pengguna Baru</h3></div></div><button class="w-8 h-8 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-500 hover:text-slate-700 flex items-center justify-center transition-all active:scale-90 shrink-0" type="button"><span class="material-symbols-outlined text-[20px]">close</span></button></div><!-- Modal Form --><div class="flex flex-col gap-3.5 pt-1"><!-- Nama Lengkap Field --><div class="flex flex-col gap-1.5"><label class="text-xs font-semibold text-slate-700">Nama Lengkap</label><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-3 text-slate-400 text-[18px]">badge</span><input class="w-full pl-9 pr-3 py-2.5 rounded-xl border border-slate-200 bg-[#f8fafc] text-xs text-slate-800 placeholder:text-slate-400 focus:outline-none focus:border-[#266b7d] focus:bg-white transition-all font-medium" placeholder="contoh: Dedi Kurniawan" type="text"></div></div><!-- Username / ID Sistem --><div class="flex flex-col gap-1.5"><label class="text-xs font-semibold text-slate-700">Nama Tim</label><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-3 text-slate-400 text-[18px]">groups</span><input class="w-full pl-9 pr-3 py-2.5 rounded-xl border border-slate-200 bg-[#f8fafc] text-xs text-slate-800 placeholder:text-slate-400 focus:outline-none focus:border-[#266b7d] focus:bg-white transition-all font-medium" placeholder="contoh: Tim Cutting A" type="text"></div></div><!-- Peran / Bagian (Role Selection Chips) --><div class="flex flex-col gap-1.5"><div class="flex flex-wrap gap-1.5"></div></div><!-- PIN Masuk (6-Digit) --><div class="flex flex-col gap-1.5"><div class="flex items-center justify-between"><label class="text-xs font-semibold text-slate-700">PIN Masuk (6-Digit)</label></div><div class="grid grid-cols-6 gap-2"><input class="h-10 text-center rounded-xl border border-slate-200 bg-[#f8fafc] text-sm font-bold text-slate-800 focus:outline-none focus:border-[#266b7d] focus:bg-white transition-all" maxlength="1" type="password" value="•"><input class="h-10 text-center rounded-xl border border-slate-200 bg-[#f8fafc] text-sm font-bold text-slate-800 focus:outline-none focus:border-[#266b7d] focus:bg-white transition-all" maxlength="1" type="password" value="•"><input class="h-10 text-center rounded-xl border border-slate-200 bg-[#f8fafc] text-sm font-bold text-slate-800 focus:outline-none focus:border-[#266b7d] focus:bg-white transition-all" maxlength="1" type="password" value="•"><input class="h-10 text-center rounded-xl border border-slate-200 bg-[#f8fafc] text-sm font-bold text-slate-800 focus:outline-none focus:border-[#266b7d] focus:bg-white transition-all" maxlength="1" placeholder="-" type="password"><input class="h-10 text-center rounded-xl border border-slate-200 bg-[#f8fafc] text-sm font-bold text-slate-800 focus:outline-none focus:border-[#266b7d] focus:bg-white transition-all" maxlength="1" placeholder="-" type="password"><input class="h-10 text-center rounded-xl border border-slate-200 bg-[#f8fafc] text-sm font-bold text-slate-800 focus:outline-none focus:border-[#266b7d] focus:bg-white transition-all" maxlength="1" placeholder="-" type="password"></div></div></div><!-- Actions --><div class="flex flex-col gap-2 pt-2"><button class="w-full py-3 px-4 rounded-xl bg-[#266b7d] text-white font-bold text-xs shadow-md shadow-[#266b7d]/20 hover:bg-[#205a69] active:scale-[0.98] transition-all flex items-center justify-center gap-2" type="button"><span class="material-symbols-outlined text-[18px]">check_circle</span><span class="">Simpan</span></button></div></div></div></div>
+
+
+
+
+
+
+
+
+</body></html>

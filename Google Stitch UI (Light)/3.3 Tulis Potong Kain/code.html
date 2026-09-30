@@ -1,0 +1,236 @@
+<!DOCTYPE html><html class="light" lang="en" style="width: 100%; min-height: 884px; height: 100%; background-color: rgb(248, 250, 252); opacity: 1 !important; visibility: visible !important;"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport">
+<title>RollTrack Cutting Modal</title>
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "background": "#f8fafc",
+            "surface": "#ffffff",
+            "primary": "#266b7d",
+            "primary-dark": "#1d5361",
+            "primary-light": "#eef7f9",
+            "secondary-coral": "#ff6b57",
+            "secondary-coral-dark": "#e05340",
+            "on-surface": "#0f172a",
+            "on-surface-variant": "#64748b"
+          },
+          fontFamily: {
+            sans: ["Inter", "sans-serif"],
+            mono: ["JetBrains Mono", "monospace"]
+          }
+        }
+      }
+    };
+  </script>
+<style>
+    * {
+      box-sizing: border-box;
+      -webkit-tap-highlight-color: transparent;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #f8fafc;
+      color: #0f172a;
+      overscroll-behavior-y: none;
+    }
+    ::-webkit-scrollbar {
+      display: none;
+    }
+  </style>
+</head>
+<body class="bg-[#f8fafc] font-sans antialiased text-slate-800" style="width: 100%; min-height: 884px; height: 100%; opacity: 1 !important; visibility: visible !important; display: block !important;">
+<!-- Main Device Frame -->
+<div class="relative w-full max-w-[390px] h-[884px] mx-auto bg-[#f8fafc] overflow-hidden flex flex-col shadow-2xl border-x border-slate-200">
+<!-- Background Content (Dimmed cutting page behind bottom sheet) -->
+<div class="absolute inset-0 flex flex-col filter blur-[1px] opacity-40 pointer-events-none select-none">
+<!-- Status bar simulation -->
+<div class="pt-3 px-6 flex justify-between items-center text-xs font-semibold text-slate-800">
+<span class="">09:41</span>
+<div class="flex items-center space-x-1.5">
+<span class="material-symbols-outlined text-[15px]">signal_cellular_alt</span>
+<span class="material-symbols-outlined text-[15px]">wifi</span>
+<span class="material-symbols-outlined text-[17px]">battery_full</span>
+</div>
+</div>
+<!-- Header -->
+<header class="px-5 pt-2 pb-3 flex justify-between items-center border-b border-slate-200/80 bg-white">
+<h1 class="text-2xl font-extrabold tracking-tight text-slate-900">RollTrack</h1>
+<span class="text-2xl font-extrabold tracking-tight text-[#266b7d]">Cutting</span>
+</header>
+<!-- Sub-content dummy -->
+<div class="p-4 space-y-4">
+<div class="w-24 h-8 bg-white border border-slate-200 rounded-full flex items-center px-3 gap-1 text-xs font-medium">
+<span class="material-symbols-outlined text-sm">arrow_back</span> Kembali
+        </div>
+<div class="bg-white rounded-2xl p-4 border border-slate-200 space-y-3">
+<div class="flex items-center gap-2 text-[#266b7d] font-bold text-sm">
+<span class="material-symbols-outlined text-lg">tune</span> Konfigurasi Batch Produksi
+          </div>
+<div class="flex items-center gap-2"><div class="flex-1 flex items-center p-1 bg-slate-100 rounded-xl gap-1"><button class="flex-1 flex items-center justify-center py-2 px-2 rounded-lg bg-[#266b7d] text-white text-[11px] font-semibold shadow-sm transition truncate" type="button"><span class="truncate">Malilkids</span></button><button class="flex-1 flex items-center justify-center py-2 px-2 rounded-lg text-slate-600 hover:text-slate-800 text-[11px] font-medium transition truncate" type="button"><span class="truncate">Anakkecilku</span></button></div><div class="flex items-center p-1 bg-slate-100 rounded-xl gap-1 shrink-0"><button aria-label="Produksi" title="Produksi" class="w-9 h-8 flex items-center justify-center rounded-lg bg-[#266b7d] text-white shadow-sm transition" type="button"><span class="material-symbols-outlined text-[18px]">precision_manufacturing</span></button><button aria-label="Non-Produksi" title="Non-Produksi" class="w-9 h-8 flex items-center justify-center rounded-lg text-slate-500 hover:text-slate-800 transition" type="button"><span class="material-symbols-outlined text-[18px]">science</span></button></div></div>
+<div class="grid grid-cols-2 gap-2">
+<div class="h-10 bg-slate-50 border rounded-lg"></div>
+<div class="h-10 bg-slate-50 border rounded-lg"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Dimmed Backdrop Overlay -->
+<div class="absolute inset-0 bg-slate-900/35 z-20 backdrop-blur-[1.5px]"></div>
+<!-- Bottom Modal Sheet Container -->
+<div class="relative z-30 flex flex-col justify-end h-full">
+<!-- Sheet Panel -->
+<div class="w-full bg-white rounded-t-[28px] shadow-2xl flex flex-col overflow-hidden border-t border-slate-100 max-h-[815px]">
+<!-- Drag Handle Indicator -->
+<div class="pt-2.5 pb-1 flex justify-center shrink-0">
+<div class="w-12 h-1.5 bg-slate-300/80 rounded-full"></div>
+</div>
+<!-- Sheet Header -->
+<div class="px-4 py-2.5 flex items-center justify-between border-b border-slate-100 shrink-0">
+<div class="flex items-center gap-2 min-w-0">
+<span class="material-symbols-outlined text-[22px] text-[#266b7d] shrink-0">qr_code_scanner</span>
+<h2 class="text-[17px] font-bold text-slate-900 tracking-tight truncate">Input Roll Kain</h2>
+</div>
+<div class="flex items-center gap-2 shrink-0"><button class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100 hover:bg-slate-200 text-[#266b7d] text-xs font-semibold active:scale-95 transition" type="button"><span class="material-symbols-outlined text-[15px]">qr_code_scanner</span><span class="">Pindai</span></button><button aria-label="Tutup" class="w-7 h-7 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-500 hover:text-slate-800 flex items-center justify-center transition active:scale-90 shrink-0" type="button"><span class="material-symbols-outlined text-base">close</span></button></div>
+</div>
+<!-- Sheet Body (Scrollable) -->
+<div class="flex-1 overflow-y-auto px-4 py-3 space-y-3.5">
+<!-- Manual Input & Switcher Card -->
+<div class="space-y-2">
+
+<!-- Input Box & Action -->
+<div class="p-3 rounded-2xl bg-slate-50/80 border border-slate-200 space-y-2.5">
+<label class="text-[11px] font-medium text-slate-500 block">Masukkan Kode Roll ID</label>
+<div class="flex items-center gap-2">
+<div class="flex-1 flex items-center h-10 px-3 rounded-xl bg-white border border-[#266b7d] shadow-sm">
+
+<input class="w-full bg-transparent p-0 border-none text-slate-900 font-mono font-bold text-sm tracking-wider focus:ring-0 focus:outline-none uppercase" readonly="" type="text" value="ROLL-KN-8921">
+</div>
+<button class="h-10 px-4 rounded-xl bg-[#266b7d] hover:bg-primary-dark active:scale-95 text-white font-semibold text-xs flex items-center gap-1 shadow-sm transition" type="button">
+<span class="material-symbols-outlined text-base">search</span>
+<span class="">Cek</span>
+</button>
+</div>
+<!-- Valid Status Badge -->
+<div class="flex items-center justify-between px-3 py-2 rounded-xl bg-[#eef7f9] border border-[#266b7d]/20 text-xs">
+<div class="flex items-center gap-1.5 text-[#266b7d] font-mono font-semibold">
+<span class="material-symbols-outlined text-base text-[#266b7d]">check_circle</span>
+<span class="">240504 - PE 30S Hitam (Karunia Textile) - 01 (24.95)</span>
+</div>
+
+</div>
+</div>
+</div>
+<!-- Roll Terdeteksi Card -->
+<div class="p-3 rounded-2xl bg-slate-50/80 border border-slate-200 space-y-2.5">
+<div class="flex flex-col">
+<span class="text-[11px] font-semibold text-slate-500">Roll Terdeteksi</span>
+<span class="text-sm font-extrabold font-mono text-slate-900">240504 - PE 30S Hitam (Karunia Textile) - 01 (24.95)</span>
+</div>
+<div class="p-2.5 bg-white rounded-xl border border-slate-200/90 space-y-2.5">
+<!-- Jenis & Motif -->
+<div class="pb-2 border-b border-slate-100">
+<span class="text-[10px] uppercase font-semibold tracking-wide text-slate-400 block mb-0.5">Jenis Kain, Motif, SKU</span>
+<span class="text-[13px] font-bold text-slate-800 leading-snug block">PE 30S • Hitam • PE30HTAM</span>
+</div>
+<!-- Meter & Berat Status -->
+<div class="grid grid-cols-2 gap-3 pt-0.5">
+<div>
+<span class="text-[10px] font-semibold text-slate-500 block">Sisa Meter Terkini</span>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="text-[22px] font-bold font-mono text-[#266b7d] leading-none tracking-tight">48.50</span>
+<span class="text-xs font-semibold text-slate-500">m</span>
+</div>
+</div>
+<div>
+<span class="text-[10px] font-semibold text-slate-500 block">Sisa Berat Fisik</span>
+<div class="flex items-baseline gap-1 mt-0.5">
+<span class="text-[22px] font-bold font-mono text-slate-800 leading-none tracking-tight">12.40</span>
+<span class="text-xs font-semibold text-slate-500">Kg</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Alokasi Pemotongan Kain Card -->
+<div class="space-y-2.5">
+<div class="flex items-center gap-1.5 text-[#266b7d] font-bold text-sm">
+<span class="material-symbols-outlined text-[18px]">content_cut</span>
+<span class="">Alokasi Pemotongan Kain</span>
+</div>
+<!-- Inputs: Panjang & Estimasi Berat -->
+<div class="grid grid-cols-2 gap-2.5">
+<div class="space-y-1">
+<label class="text-[11px] font-semibold text-slate-500 block">Panjang Potong</label>
+<div class="flex items-center h-10 px-3 rounded-xl bg-white border border-slate-200 focus-within:border-[#266b7d] shadow-sm">
+<span class="material-symbols-outlined text-[#266b7d] text-base mr-1.5">straighten</span>
+<input class="w-full bg-transparent p-0 border-none font-bold text-[#266b7d] text-sm focus:ring-0 focus:outline-none" type="text" value="35,00">
+<span class="text-xs font-semibold text-slate-500 ml-1">m</span>
+</div>
+</div>
+<div class="space-y-1">
+<label class="text-[11px] font-semibold text-slate-500 block">Estimasi Berat</label>
+<div class="flex items-center h-10 px-3 rounded-xl bg-white border border-slate-200 focus-within:border-[#266b7d] shadow-sm">
+<span class="material-symbols-outlined text-[#266b7d] text-base mr-1.5">scale</span>
+<input class="w-full bg-transparent p-0 border-none font-semibold text-slate-800 text-sm focus:ring-0 focus:outline-none" type="text" value="8,95">
+<span class="text-[11px] font-semibold text-slate-500 uppercase ml-1">kg</span>
+</div>
+</div>
+</div>
+<!-- Status Roll Pasca Cutting -->
+<div class="p-3 rounded-2xl bg-slate-50/80 border border-slate-200 space-y-2">
+<span class="text-[11px] font-semibold text-slate-600 block">Status Roll Pasca Cutting</span>
+<div class="grid grid-cols-2 gap-2">
+<!-- Checked Option: Sisa -->
+<div class="flex items-center gap-2 py-2 px-3 rounded-xl bg-white border-2 border-[#266b7d] shadow-xs cursor-pointer">
+<div class="w-4 h-4 rounded-full bg-[#266b7d] flex items-center justify-center shrink-0">
+<div class="w-1.5 h-1.5 rounded-full bg-white"></div>
+</div>
+<span class="text-xs font-bold text-[#266b7d]">Sisa</span>
+</div>
+<!-- Unchecked Option: Habis -->
+<div class="flex items-center gap-2 py-2 px-3 rounded-xl bg-white border border-slate-200 opacity-60 cursor-pointer">
+<div class="w-4 h-4 rounded-full border border-slate-300 bg-slate-100 shrink-0"></div>
+<span class="text-xs font-medium text-slate-600">Habis</span>
+</div>
+</div>
+<!-- Calculation Result -->
+<div class="flex items-center justify-between pt-2 border-t border-slate-200/90 text-xs">
+<span class="font-mono text-slate-500 text-[11px]">48.50 m − 35.00 m =</span>
+<span class="font-bold text-[#266b7d] text-sm">13.50 m Sisa</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Modal Bottom Actions -->
+<div class="p-4 bg-white border-t border-slate-100 flex items-center gap-3 shrink-0">
+<button class="flex-1 h-12 rounded-xl bg-[#ff6b57] hover:bg-[#e05340] active:scale-[0.98] text-white font-bold text-sm flex items-center justify-center gap-2 shadow-sm transition" type="button">
+<span class="material-symbols-outlined text-[19px]">delete</span>
+<span class="">Waste &amp; Reject</span>
+</button>
+<button class="flex-1 h-12 rounded-xl bg-[#266b7d] hover:bg-primary-dark active:scale-[0.98] text-white font-bold text-sm flex items-center justify-center gap-2 shadow-md shadow-[#266b7d]/20 transition" type="button">
+<span class="material-symbols-outlined text-[19px]">content_cut</span>
+<span class="">Potong Kain</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+</body></html>
